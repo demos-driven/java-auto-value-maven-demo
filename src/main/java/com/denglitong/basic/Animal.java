@@ -9,6 +9,7 @@ import com.google.auto.value.AutoValue;
 public abstract class Animal {
 
   public static Animal create(String name, int numberOfLegs) {
+    // run `mvn clean package` to generate the AutoValue implemented class
     return new AutoValue_Animal(name, numberOfLegs);
   }
 

@@ -13,6 +13,7 @@ public abstract class Animal {
   public abstract int numberOfLegs();
 
   public static Builder builder() {
+    // run `mvn clean package` to generate the AutoValue implemented class
     return new AutoValue_Animal.Builder();
   }
 
