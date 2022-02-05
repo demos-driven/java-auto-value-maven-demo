@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2022 Urban Compass, Inc.
  */
-package com.denglitong;
+package com.denglitong.basic;
 
 import org.junit.jupiter.api.Test;
 

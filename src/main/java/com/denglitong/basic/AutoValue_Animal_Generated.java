@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2022 Urban Compass, Inc.
  */
-package com.denglitong;
+package com.denglitong.basic;
 
 import java.util.Objects;
 
@@ -21,12 +21,12 @@ final class AutoValue_Animal_Generated extends Animal {
   }
 
   @Override
-  String name() {
+  public String name() {
     return name;
   }
 
   @Override
-  int numberOfLegs() {
+  public int numberOfLegs() {
     return numberOfLegs;
   }
 
