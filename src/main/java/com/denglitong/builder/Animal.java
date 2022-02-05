@@ -17,6 +17,9 @@ public abstract class Animal {
     return new AutoValue_Animal.Builder();
   }
 
+  // initialize a builder to the same property values as an existing value instance
+  public abstract Builder toBuilder();
+
   @AutoValue.Builder
   public abstract static class Builder {
 

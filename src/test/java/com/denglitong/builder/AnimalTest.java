@@ -15,5 +15,12 @@ public class AnimalTest {
     assertThat(dog.name()).isEqualTo("dog");
     assertThat(dog.numberOfLegs()).isEqualTo(4);
     assertThat(dog).hasToString("Animal{name=dog, numberOfLegs=4}");
+
+    // value instance is immutable after build,
+    // but we can use toBuilder() to get a mutable builder with the same properties
+    Animal dog2 = dog.toBuilder().setNumberOfLegs(3).build();
+    assertThat(dog2.name()).isEqualTo("dog");
+    assertThat(dog2.numberOfLegs()).isEqualTo(3);
+    assertThat(dog2).hasToString("Animal{name=dog, numberOfLegs=3}");
   }
 }
